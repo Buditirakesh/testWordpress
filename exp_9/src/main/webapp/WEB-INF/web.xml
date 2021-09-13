@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<display-name>exp_9</display-name>
+<servlet>
+<servlet-name>abc</servlet-name> 
+    <servlet-class>Servletcontext.Applicant</servlet-class> 
+</servlet>
+ <servlet-mapping> 
+    <servlet-name>abc</servlet-name> 
+    <url-pattern>/Applicant</url-pattern> 
+  </servlet-mapping> 
+
+<context-param> 
+    <param-name>name</param-name> 
+    <param-value>Rakesh</param-value> 
+  </context-param>
+
+<context-param> 
+    <param-name>Phone</param-name> 
+    <param-value>Realme 5</param-value> 
+  </context-param>
+</web-app>

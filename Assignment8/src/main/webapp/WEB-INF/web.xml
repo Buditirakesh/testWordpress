@@ -1,0 +1,100 @@
+<web-app> 
+  
+<servlet> 
+    <servlet-name>recruiter</servlet-name> 
+    <servlet-class>Recruiter</servlet-class> 
+    <init-param> 
+      <param-name>Email</param-name> 
+      <param-value>forRecruiter@xyz.com</param-value> 
+    </init-param> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>recruiter</servlet-name> 
+    <url-pattern>/servlet1</url-pattern> 
+  </servlet-mapping> 
+  
+  <servlet> 
+    <servlet-name>applicant</servlet-name> 
+    <servlet-class>Applicant</servlet-class> 
+    <init-param> 
+      <param-name>Email</param-name> 
+      <param-value>forApplicant@xyz.com</param-value> 
+    </init-param> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>applicant</servlet-name> 
+    <url-pattern>/servlet2</url-pattern> 
+  </servlet-mapping> 
+  
+  <context-param> 
+    <param-name>Website-name</param-name> 
+    <param-value>NewWebsite.tg</param-value> 
+  </context-param>
+
+
+
+
+<display-name>ServletProgram</display-name>
+  <servlet>
+    <servlet-name>demo1</servlet-name>
+    <servlet-class>Servcontx</servlet-class>
+    <init-param>
+      <param-name>Name</param-name>
+      <param-value>Raj</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Age</param-name>
+      <param-value>20</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Mobile</param-name>
+      <param-value>9865023668</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>demo2</servlet-name>
+    <servlet-class>Servcontx2</servlet-class>
+    <init-param>
+      <param-name>Name</param-name>
+      <param-value>Deb</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Age</param-name>
+      <param-value>22</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Mobile</param-name>
+      <param-value>7005023668</param-value>
+    </init-param>
+  </servlet>
+  <context-param>
+    <param-name>Website-name</param-name>
+    <param-value>www.cutm.ac.in</param-value>
+  </context-param>
+  <context-param>
+    <param-name>Course</param-name>
+    <param-value>CSE Domain</param-value>
+  </context-param>
+  <context-param>
+    <param-name>Sem.</param-name>
+    <param-value>5th</param-value>
+  </context-param>
+  <servlet-mapping>
+    <servlet-name>demo1</servlet-name>
+    <url-pattern>/Servcontx</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>demo2</servlet-name>
+    <url-pattern>/Servcontx2</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

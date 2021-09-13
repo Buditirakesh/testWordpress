@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<display-name>Advancejava</display-name>
+<servlet>
+<servlet-name>abc</servlet-name> 
+    <servlet-class>ServletContex.MyServlet</servlet-class> 
+</servlet>
+ <servlet-mapping> 
+    <servlet-name>abc</servlet-name> 
+    <url-pattern>/MyServlet</url-pattern> 
+  </servlet-mapping> 
+
+<context-param> 
+    <param-name>name</param-name> 
+    <param-value>Rakesh</param-value> 
+  </context-param>
+
+<context-param> 
+    <param-name>Phone</param-name> 
+    <param-value>Realme 5</param-value> 
+  </context-param>
+</web-app>
